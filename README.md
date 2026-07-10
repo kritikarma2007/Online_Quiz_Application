@@ -143,7 +143,7 @@ npm install
 ### Backend
 
 ```bash
-cd ../server
+cd server
 npm install
 ```
 
