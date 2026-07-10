@@ -42,7 +42,7 @@ Online Quiz Application is a full-stack MERN (MongoDB, Express.js, React.js, Nod
 
 # System Architecture
 
-```
+```text
 React Client
       │
       │ REST API
@@ -56,8 +56,6 @@ MongoDB Database
 ---
 
 # Project Structure
-
-## 📂 Project Structure
 
 ```text
 Online_Quiz_Application/
@@ -121,6 +119,7 @@ Online_Quiz_Application/
 ├── .gitignore
 └── README.md
 ```
+
 ---
 
 # Installation
@@ -128,20 +127,20 @@ Online_Quiz_Application/
 ## Clone Repository
 
 ```bash
-git clone https://github.com/your-username/Online_QuizApplication.git
-cd Online_QuizApplication
+git clone https://github.com/kritikarma2007/Online_Quiz_Application.git
+cd Online_Quiz_Application
 ```
 
 ## Install Dependencies
 
-Frontend
+### Frontend
 
 ```bash
 cd client
 npm install
 ```
 
-Backend
+### Backend
 
 ```bash
 cd ../server
@@ -162,16 +161,38 @@ JWT_SECRET=your_secret_key
 
 ---
 
+# Seed the Database
+
+Populate the database with the sample quiz questions before running the application.
+
+```bash
+cd server
+node utils/seeder.js
+```
+
+If successful, you should see:
+
+```text
+MongoDB connected: <your_mongodb_cluster>
+Questions seeded successfully.
+```
+
+> **Note:** Run this command only once during the initial setup or whenever you want to reseed the quiz questions.
+
+---
+
 # Run the Application
 
-Start Backend
+### Start Backend
 
 ```bash
 cd server
 npm start
 ```
 
-Start Frontend
+### Start Frontend
+
+Open a new terminal and run:
 
 ```bash
 cd client
@@ -186,7 +207,7 @@ Backend: `http://localhost:5000`
 
 # Workflow
 
-```
+```text
 Register/Login
       │
       ▼
